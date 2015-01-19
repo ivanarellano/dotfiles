@@ -26,6 +26,8 @@ NeoBundle 'bling/vim-airline'
     let g:airline_left_sep = '►'
     let g:airline_right_sep = '◄'
     let g:airline_branch_prefix = 'λ'
+NeoBundle 'chase/vim-ansible-yaml'
+NeoBundle 'mapbox/carto', { 'rtp': 'build/vim-carto/' }
 NeoBundle 'altercation/vim-colors-solarized'
     set t_Co=16
 NeoBundle 'takac/vim-commandcaps'
@@ -102,9 +104,10 @@ NeoBundle 'Shougo/neocomplete', {
 NeoBundleLazy 'Valloric/YouCompleteMe', {
 \ 'disabled': has('win32unix'),
 \ 'build' : {
-\     'mac' : 'git submodule update --init --recursive && ./install.sh --clang-completer --omnisharp-completer',
-\     'unix' : 'git submodule update --init --recursive && ./install.sh --clang-completer --omnisharp-completer'
+\     'mac' : 'git submodule update --init --recursive; ./install.sh --clang-completer --omnisharp-completer',
+\     'unix' : 'git submodule update --init --recursive; ./install.sh --clang-completer --omnisharp-completer'
 \    },
+\ 'augroup': 'youcompletemeStart',
 \ 'autoload': {'insert': 1}
 \ }
     let g:ycm_autoclose_preview_window_after_completion = 1
