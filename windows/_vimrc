@@ -204,3 +204,10 @@ autocmd FileType octave set omnifunc=syntaxcomplete#Complete
 " Solarized needs to happen in vimrc for some reason...
 set background=dark
 colorscheme solarized
+ 
+" Required:
+filetype plugin indent on
+ 
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck

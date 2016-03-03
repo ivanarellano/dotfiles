@@ -11,8 +11,8 @@ sudo add-apt-repository -y ppa:neovim-ppa/unstable
 sudo apt-get update
 
 # Essentials, can't run the install scripts without em
-#sudo apt-get install -qqy git stow python-setuptools python-dev build-essential python-software-properties
-#sudo easy_install pip
+sudo apt-get install -qqy git stow python-setuptools python-dev build-essential python-software-properties
+sudo easy_install pip
 
 # Niceties - Integrates well with my oh-my-zsh plugins
 sudo apt-get install -qqy tmux autojump vim-nox
